@@ -1,11 +1,11 @@
 #$ -V
-#$ -N 8B2T-in-water                                  # job name
-#$ -pe smp 96                                        # openmp threads
-#$ -q ddu.q@@ddu_hpn                                 # node type
-#$ -jc long.gpu4                                     # job class
-#$ -l gpu=4                                          # number of gpus (if applicable)
-#$ -o 8B2T-in-water.log                              # output log file
-#$ -cwd                                              # keep workdir
+#$ -N 8B2T-in-water           # job name
+#$ -pe smp 96                 # openmp threads
+#$ -q ddu.q@@ddu_hpn          # node type
+#$ -jc long.gpu4              # job class
+#$ -l gpu=4                   # number of gpus (if applicable)
+#$ -o 8B2T-in-water.log       # output log file
+#$ -cwd                       # keep workdir
 
 # Load the GROMACS module (meaning we can run GROMACS commands)
 module load GROMACS-thmpi
