@@ -1,6 +1,6 @@
 ; Run parameters
 integrator              = md        ; leap-frog integrator
-nsteps                  = 100000000  ; 100000ps or 100ns
+nsteps                  =           ; 100000ps or 100ns
 dt                      = 0.002 
 ; Output control
 nstxout                 = 0         ; suppress bulky .trr file by specifying 
@@ -30,7 +30,7 @@ fourierspacing          = 0.16      ; grid spacing for FFT
 tcoupl                  = nose-hoover   ; Nose-Hooever thermostat
 tc-grps                 = System        ; Coupling groups
 tau_t                   = 0.4           ; time constant, in ps
-ref_t                   = 298 
+ref_t                   = 
 ; Pressure coupling is off
 pcoupl                  = c-rescale
 pcoupltype              = isotropic             ; uniform scaling of box vectors
